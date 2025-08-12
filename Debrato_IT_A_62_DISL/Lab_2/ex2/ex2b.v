@@ -1,0 +1,5 @@
+module ex2a(a, b, c, d, f);
+input a,b,c,d;
+output f;
+assign f=(a|~b|~c)&(~a|~b|c)&(c|~d|~a)&(~c|b|~a);
+endmodule
