@@ -1,5 +1,5 @@
 $date
-	Tue Aug 12 08:33:37 2025
+	Tue Aug 12 09:59:00 2025
 $end
 $version
 	Icarus Verilog
@@ -19,11 +19,25 @@ $var wire 1 # b $end
 $var wire 1 $ c $end
 $var wire 1 % d $end
 $var wire 1 ! f $end
+$var wire 1 & g $end
+$var wire 1 ' h $end
+$var wire 1 ( i $end
+$var wire 1 ) j $end
+$var wire 1 * k $end
+$var wire 1 + l $end
+$var wire 1 , m $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+1,
+1+
+1*
+0)
+1(
+1'
+1&
 0%
 0$
 0#
@@ -31,29 +45,53 @@ $dumpvars
 1!
 $end
 #20
+0*
 1%
 #40
 0!
+1)
+1*
+0(
 0%
 1$
 #60
 1!
+0*
 1%
 #80
+0)
+0,
+1*
+1(
+0'
 0%
 0$
 1#
 #100
+0*
+0+
 1%
 #120
 0!
+1)
+1,
+1*
+1+
+0(
 0%
 1$
 #140
 1!
+0*
+0+
 1%
 #160
 0!
+1*
+1(
+1'
+1+
+0&
 0%
 0$
 0#
@@ -61,22 +99,31 @@ $end
 #180
 1%
 #200
+0(
 0%
 1$
 #220
 1%
 #240
 1!
+0,
+1(
+0'
 0%
 0$
 1#
 #260
+0+
 1%
 #280
 0!
+1,
+1+
+0(
 0%
 1$
 #300
 1!
+0+
 1%
 #320
