@@ -23,7 +23,7 @@ int data;
 struct Node *next;
 };
 void insertBefore(struct Node** head, int value, int before);
-void insertAfter(struct Node* head, int value, int after);
+void insertAfter(struct Node** head, int value, int after);
 void deleteNode(struct Node** head, int value);
 void traverse(struct Node* head);
 void reverseList(struct Node** head);
@@ -173,22 +173,26 @@ newNode->next = current;
 prev->next = newNode;
 }
 
-void insertAfter(struct Node* head, int value, int after) {
-struct Node* current = head;
+void insertAfter(struct Node** head, int value, int after) {
+    struct Node* current = *head;
 
-while (current != NULL && current->data != after) {
-current = current->next;
-}
+    while (current != NULL && current->data != after) {
+        current = current->next;
+    }
 
-if (current == NULL) {
-printf("Element %d not found.\n", after);
-return;
-}
+    if (current == NULL) {
+        printf("Element %d not found.\n", after);
+        return;
+    }
 
-struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-newNode->data = value;
-newNode->next = current->next;
-current->next = newNode;
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    if (!newNode) {
+        printf("Memory allocation failed\n");
+        return;
+    }
+    newNode->data = value;
+    newNode->next = current->next;
+    current->next = newNode;
 }
 
 void deleteNode(struct Node** head, int value) {
