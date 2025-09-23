@@ -1,0 +1,74 @@
+$date
+	Tue Sep 23 09:49:33 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module priority_encoder16to4_tb $end
+$var wire 1 ! valid $end
+$var wire 4 " out [3:0] $end
+$var reg 16 # in [15:0] $end
+$scope module DUT $end
+$var wire 16 $ in [15:0] $end
+$var reg 4 % out [3:0] $end
+$var reg 1 ! valid $end
+$var integer 32 & i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11111111111111111111111111111111 &
+b0 %
+b0 $
+b0 #
+b0 "
+0!
+$end
+#10000
+1!
+b11111111111111111111111111111111 &
+b1 #
+b1 $
+#20000
+b1 "
+b1 %
+b11111111111111111111111111111111 &
+1!
+b10 #
+b10 $
+#30000
+b11111111111111111111111111111111 &
+b100 "
+b100 %
+1!
+b10000 #
+b10000 $
+#40000
+b11111111111111111111111111111111 &
+b1111 "
+b1111 %
+1!
+b1000000000000000 #
+b1000000000000000 $
+#50000
+b11111111111111111111111111111111 &
+b1101 "
+b1101 %
+1!
+b1010000000000000 #
+b1010000000000000 $
+#60000
+b11111111111111111111111111111111 &
+b0 "
+b0 %
+1!
+b1111111111111111 #
+b1111111111111111 $
+#70000

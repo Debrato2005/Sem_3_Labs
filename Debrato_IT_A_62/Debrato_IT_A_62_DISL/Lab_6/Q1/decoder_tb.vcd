@@ -1,0 +1,179 @@
+$date
+	Tue Sep 23 08:40:35 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module decoder_tb $end
+$var wire 8 ! y [7:0] $end
+$var reg 1 " en $end
+$var reg 3 # in [2:0] $end
+$scope module uut $end
+$var wire 1 " en $end
+$var wire 3 $ in [2:0] $end
+$var wire 4 % y_low [3:0] $end
+$var wire 4 & y_high [3:0] $end
+$var wire 8 ' y [7:0] $end
+$scope module dec_high $end
+$var wire 1 ( en $end
+$var wire 2 ) in [1:0] $end
+$var reg 4 * y [3:0] $end
+$upscope $end
+$scope module dec_low $end
+$var wire 1 + en $end
+$var wire 2 , in [1:0] $end
+$var reg 4 - y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 -
+b0 ,
+0+
+b0 *
+b0 )
+0(
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+0"
+b0 !
+$end
+#5
+b1 ,
+b1 )
+b1 #
+b1 $
+#10
+b10 ,
+b10 )
+b10 #
+b10 $
+#15
+b11 ,
+b11 )
+b11 #
+b11 $
+#20
+b0 ,
+b0 )
+b100 #
+b100 $
+#25
+b1 ,
+b1 )
+b101 #
+b101 $
+#30
+b10 ,
+b10 )
+b110 #
+b110 $
+#35
+b11 ,
+b11 )
+b111 #
+b111 $
+#40
+b0 ,
+b0 )
+b0 #
+b0 $
+#45
+b1 !
+b1 '
+b1 %
+b1 -
+1+
+1"
+#50
+b10 !
+b10 '
+b10 %
+b10 -
+b1 ,
+b1 )
+b1 #
+b1 $
+#55
+b100 !
+b100 '
+b100 %
+b100 -
+b10 ,
+b10 )
+b10 #
+b10 $
+#60
+b1000 !
+b1000 '
+b1000 %
+b1000 -
+b11 ,
+b11 )
+b11 #
+b11 $
+#65
+0+
+b1 &
+b1 *
+b10000 !
+b10000 '
+b0 %
+b0 -
+1(
+b0 ,
+b0 )
+b100 #
+b100 $
+#70
+b100000 !
+b100000 '
+b10 &
+b10 *
+b1 ,
+b1 )
+b101 #
+b101 $
+#75
+b1000000 !
+b1000000 '
+b100 &
+b100 *
+b10 ,
+b10 )
+b110 #
+b110 $
+#80
+b10000000 !
+b10000000 '
+b1000 &
+b1000 *
+b11 ,
+b11 )
+b111 #
+b111 $
+#85
+b1 %
+b1 -
+1+
+0(
+b1 !
+b1 '
+b0 &
+b0 *
+b0 ,
+b0 )
+b0 #
+b0 $
+#90
