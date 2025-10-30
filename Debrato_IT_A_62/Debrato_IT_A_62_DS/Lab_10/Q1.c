@@ -1,4 +1,4 @@
-/* Write a program to create a BST and perform inorder, preorder, and postorder
+-/* Write a program to create a BST and perform inorder, preorder, and postorder
 traversals.*/
 #include <stdio.h>
 #include <stdlib.h>
